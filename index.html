@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- Importa o arquivo CSS -->
+  <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon"> <!-- Ícone da página -->
+  <script defer src="./js/carregarPokemons.js" type="module"></script> <!-- Importa o arquivo JavaScript -->
+</head>
+
+<body>
+
+  <header>
+    <img src="imgs/logo.png" alt="logo" class="logo"> <!-- Logo do cabeçalho -->
+  </header>
+
+  <main>
+    <img src="#" alt="pokemon" class="pokemon_image"> <!-- Imagem do Pokémon -->
+
+    <h1 class="pokemon_data">
+      <span class="pokemon_number"></span> -
+      <span class="pokemon_name"></span> <!-- Número e nome do Pokémon -->
+    </h1>
+
+    <form class="form">
+      <input type="search" class="input_search" placeholder="Digite o nome ou número" required>
+      <!-- Formulário de pesquisa -->
+    </form>
+
+    <div class="buttons">
+      <button class="button btn-prev">&lt; Anterior</button> <!-- Botão de navegação - Anterior -->
+      <button class="button btn-next">Próximo &gt;</button> <!-- Botão de navegação - Próximo -->
+    </div>
+
+  </main>
+
+  <footer>
+    <h2>
+      <a href="https://github.com/nicollaswendel">&copy; Nícollas Wendel</a> <!-- Créditos no rodapé -->
+      <h2>
+  </footer>
+
+</body>
+
+</html>

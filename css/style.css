@@ -1,0 +1,146 @@
+/* Importa a fonte Kanit do Google Fonts e aplica-a a todos os elementos */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Define estilos globais */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit';
+    /* Aplica a fonte Kanit a todos os elementos */
+}
+
+/* Estilos do corpo da página */
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos do cabeçalho */
+header {
+    height: 15%;
+    background-image: url('../imgs/header.png');
+    /* Define uma imagem de fundo para o cabeçalho */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Estilos da logo no cabeçalho */
+.logo {
+    max-width: 100%;
+    height: auto;
+    width: 15%;
+}
+
+/* Estilos do conteúdo principal */
+main {
+    flex-grow: -1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #09599a, white, #09599a);
+    /* Define um gradiente de fundo */
+}
+
+/* Estilos do rodapé */
+footer {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../imgs/header.png');
+    /* Define uma imagem de fundo para o rodapé */
+}
+
+/* Estilos para links */
+a {
+    text-decoration: none;
+    color: #E6BB11;
+    font-size: clamp(8px, 5vw, 25px);
+    /* Tamanho do texto responsivo */
+}
+
+/* Estilos da imagem do Pokémon */
+.pokemon_image {
+    position: absolute;
+    bottom: 56%;
+    display: flex;
+    justify-content: center;
+    height: 18%;
+}
+
+/* Estilos dos dados do Pokémon */
+.pokemon_data {
+    position: absolute;
+    font-weight: 600;
+    color: #3a444d;
+    top: 46%;
+    display: flex;
+    justify-content: center;
+    font-size: clamp(8px, 5vw, 25px);
+    /* Tamanho do texto responsivo */
+}
+
+/* Estilos do nome do Pokémon */
+.pokemon_name {
+    color: #3a444d;
+    text-transform: capitalize;
+    /* Converte o texto para maiúsculas */
+}
+
+/* Estilos do formulário de pesquisa */
+.form {
+    position: absolute;
+    width: 20%;
+    top: 55%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos da entrada de pesquisa */
+.input_search {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    /* Tamanho do texto responsivo */
+    box-shadow: -3px 4px 0 #888;
+}
+
+/* Estilos dos botões de navegação */
+.buttons {
+    position: absolute;
+    bottom: 25%;
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    gap: 20px;
+}
+
+/* Estilos dos botões */
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    /* Tamanho do texto responsivo */
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222;
+}
+
+/* Estilos dos botões quando clicados */
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
